@@ -1,0 +1,85 @@
+.additional_data {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 0;
+}
+.wind,
+.clock,
+.humidity {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.weather_body {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.temperature {
+  font-size: 9rem;
+  position: relative;
+  font-family: "Fredoka One", cursive;
+}
+.temperature span {
+  font-size: 56px;
+  position: absolute;
+}
+.city {
+  font-size: 30px;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.weatherDes {
+  font-size: 25px;
+  font-family: "Fredoka One", cursive;
+}
+.min_max {
+  width: 30vw;
+  margin: 10px auto;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.min_max span span {
+  font-family: "Fredoka One", cursive;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: -1px;
+  width: 100vw;
+  height: 100vh;
+}
+.data {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: screen;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: all 2s ease-in-out;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: background 2s ease-in-out;
+}
